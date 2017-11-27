@@ -1,0 +1,247 @@
+<html>
+
+	<head>
+	
+		<meta content="text/html charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		
+		<title>Reaction game</title>
+		
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+		
+		<style type="text/css">
+			
+			body {
+				font-family: 'Raleway', sans-serif;
+			}
+			
+			#everything {
+				height:95%;
+				position:relative;
+			}
+			
+			#introduction {
+				height:200px;
+				<!--background-color:red;-->;
+			}
+			
+			#sectionForGame {
+				border: 5px solid black;
+				position:absolute;
+				top:200px;
+				left:4.5%;
+				right:5%;
+				<!--background-color:blue;-->;
+				width:1300px;
+				height:660px;
+				margin:0 auto;
+			}
+			
+			#gameShape {
+				opacity:0;
+				position:absolute;
+			}
+			
+			#restartbutton {
+				opacity:0;
+			}
+            
+		</style>
+		
+	</head>
+	
+	
+	<body>
+	
+		<div id="everything">
+			<div id="introduction">
+				<h1>Reaction game!</h1>
+				
+				<h2>The objective of the game is to click the appearing objects as fast as possible.</h2>
+				
+				<p id="hitBut">Hit the button when ready.</p>
+				
+				<p id="timeAnnouncement"></p>
+				<p id="avg"></p>
+				
+				<button id="gobutton">Go!</button>
+				<button id="restartbutton">Restart?</button>
+				
+				
+			</div>
+		
+		
+			<div id="sectionForGame">
+				<div id="gameShape"></div>
+			</div>
+		
+		</div>
+		
+		
+		<script type="text/javascript">
+			
+			var randomTime = 0;
+			var gameFinished = 0;
+			var startTime = 0;
+			var endTime = 0;
+			var turn = 0;
+			var sTimes = new Array();
+			var eTimes = new Array ();
+			var colour = "";
+			var colours = new Array();
+			var cosChecker = 0;
+			var xCheckervar = 0;
+			var yCheckervar = 0;
+			var times = new Array();
+			times.length = 10;
+			var avgVar = 0;
+			var timesPresented = new Array();
+			var active = 1;
+			
+			function getSum(a, b) {
+				return a + b;
+			}
+            
+			document.getElementById("gobutton").onclick = gameStep
+			
+			document.getElementById("gameShape").onclick = function() {
+				if (active==1) {gameStep()
+				}
+			}
+			
+			document.getElementById("restartbutton").onclick = function() {
+				for (var z = 0; z<timesPresented.length; z++) {
+					delete timesPresented[z];
+					delete times[z];
+					delete eTimes[z];
+					delete sTimes[z];
+				}
+				timesPresented.length=1;
+				times.length=1;
+				eTimes.length=1;
+				sTimes.length=1;
+
+				document.getElementById("timeAnnouncement").innerHTML=" ";
+				for (var t = 0; t < times.length; t++) {
+					sTimes[t] = 0;
+					eTimes[t] = 0;
+					times[t] = 0;
+					timesPresented[t] = 0;
+				}
+				
+				document.getElementById("gobutton").style.opacity = 1;
+				turn=0;
+				document.getElementById("timeAnnouncement").innerHTML = "";
+				document.getElementById("avg").innerHTML = "";
+				document.getElementById("restartbutton").style.opacity = 0;
+				
+			}
+			
+			function gameStep() {
+				if (turn == 0) {
+					document.getElementById("timeAnnouncement").innerHTML = ""
+					document.getElementById("gobutton").style.opacity = 0;
+					document.getElementById("hitBut").style.opacity = 0;
+				}
+				
+				if (turn > 0) {
+					endTime = new Date();
+					endTime = endTime.getTime();
+					eTimes[turn-1] = endTime;
+					times[turn-1]=(eTimes[turn-1]-sTimes[turn-1])/1000;
+					timesPresented[turn-1]=" " + times[turn-1] + "s";
+				}
+
+				
+				
+				
+				if (turn < 10) {
+					document.getElementById("gameShape").style.opacity = 0;
+					active=0;
+					randomTime = makeRandomTime();
+					window.setTimeout(objectUptime, randomTime);
+					console.log(turn)
+					if (turn!=0) {
+						document.getElementById("timeAnnouncement").innerHTML=timesPresented;
+					}
+					turn++;
+				}
+					
+					
+				else {
+					document.getElementById("timeAnnouncement").innerHTML=timesPresented;
+					document.getElementById("hitBut").style.opacity = 1;
+					document.getElementById("gameShape").style.opacity = 0;
+					avgVar = times.reduce(getSum);
+					avgVar = avgVar/times.length;
+					avgVar = avgVar.toPrecision(3);
+					document.getElementById("avg").innerHTML = "With an average time of: " + avgVar + "s.";
+					document.getElementById("restartbutton").style.opacity=1;
+					active = 0;
+				}
+				
+			}
+			
+			
+			
+			function objectUptime () {
+				document.getElementById("gameShape").style.opacity = 1;
+				active=1;
+				document.getElementById("gameShape").style.backgroundColor = colourpicker();
+				var wh = sizepicker()
+				document.getElementById("gameShape").style.width = wh + "px";
+				document.getElementById("gameShape").style.height = wh + "px";
+				document.getElementById("gameShape").style.borderRadius = circleOrSquare();
+				document.getElementById("gameShape").style.left = xChecker() + "px"
+				document.getElementById("gameShape").style.top = yChecker() + "px"
+				
+				startTime = new Date();
+				startTime = startTime.getTime();
+				sTimes[turn-1] = startTime;
+			}
+				
+			function colourpicker() {
+				colour = Math.floor(Math.random() * 12)
+				var colours = ["red", "green", "blue", "yellow", "cyan", "magenta", "lightblue", "darkblue", "limegreen", "silver", "pink", "orange"];
+				return(colours[colour])
+			}
+			
+			function sizepicker() {
+				size = (Math.random() * 100) + 100
+				return(size)
+			}
+			
+			function circleOrSquare() {
+				cosChecker = Math.floor(Math.random() * 2)
+				if (cosChecker == 0) {
+					return("0")
+				}
+				else {
+					return("50%")
+				}
+			}
+			
+			function makeRandomTime() {
+				randomTime = ((Math.random() * 2000) + 1000);
+				return(randomTime);
+			}
+			
+			function xChecker() {
+				xCheckervar = (Math.random() * 1100)
+				return(xCheckervar)
+			}
+				
+			
+			function yChecker() {
+				yCheckervar = (Math.random() * 460)
+				return(yCheckervar)
+			}
+			
+			
+		</script>
+		
+	
+	
+	</body>
+	
+</html>

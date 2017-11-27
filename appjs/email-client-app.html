@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="app.min.css">
+    <style>
+        .blueBack {
+            background: #4C86EC;
+        }
+      
+        .blackBack {
+            background: black;
+        }
+    
+    </style>
+  </head>
+
+  <body>
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-title blueBack">Send An Email</div>
+      </div>
+      <div class="app-content">
+        
+            <p class="app-section">
+					Click below to send an email!
+            </p>
+            
+            <div class="app-section">
+                
+                <p class="app-section suggested" id="slot1">
+                </p>
+                <p class="app-section suggested" id="slot2">
+                </p>
+                <p class="app-section suggested" id="slot3">
+                </p>
+                <p class="app-section suggested" id="slot4">
+                </p>
+                <p class="app-section suggested" id="slot5">
+                </p>
+          
+            </div>
+				
+        
+          
+          
+        <div class="app-section">
+          
+            <div class="app-button" data-target="emailSender">Send to new user</div>
+            
+        </div>
+      </div>
+    </div>
+
+      
+      
+      
+      <div class="app-page" data-page="emailSender">
+        <div class="app-topbar">
+		
+            
+            <div class="app-title">Send Email</div>
+            <div class="right app-button" data-back>Done</div>
+        </div>
+          
+      <div class="app-content">
+		<form id="my_form">
+			
+			
+			<div class="app-section">
+				From:
+				<input class="app-input" placeholder="Your email address" name="userEmail">
+			</div>
+
+			<div class="app-section">
+				To:
+				<input class="app-input" placeholder="Recipient email address" name="targetEmail">
+			</div>
+			
+			<div class="app-section">
+					<input class="app-input" name="subject" placeholder="Subject">
+					<textarea class="app-input" name="message" placeholder="Message"></textarea>
+					<div class="app-button green app-submit" id="sendButton">Send</div>
+			</div>
+		</form>
+	</div>
+          
+    </div>
+
+	<script src="zepto.js"></script>
+	<script src="app.min.js"></script>
+	<script>
+	
+	toBeAdded = "";
+	suggestionsArray = new Array();
+	if (typeof(Storage) !== "undefined") {
+	}
+		
+	
+	function updateSuggestions() {
+		var storedNames = JSON.parse(localStorage.getItem("suggestions"));
+		$('#slot5').html() = suggestionsArray[5];
+		$('#slot4').html() = suggestionsArray[4];
+		$('#slot3').html() = suggestionsArray[3];
+		$('#slot2').html() = suggestionsArray[2];
+		$('#slot1').html() = suggestionsArray[1];
+	}
+	
+	function slidingSaver() {
+		suggestionsArray[5] = suggestionsArray[4];
+		suggestionsArray[4] = suggestionsArray[3];
+		suggestionsArray[3] = suggestionsArray[2];
+		suggestionsArray[2] = suggestionsArray[1];
+		suggestionsArray[1] = toBeAdded;
+		// to add local storage after json encode;
+	}
+		
+	
+	App.controller('emailSender', function (page) {
+		$(page).find('#sendButton')
+					.clickable()
+					.on('click', function (e) {
+						
+						
+						
+						dataToSend = $('#my_form').serialize();
+						$.ajax({
+							type: 'POST',
+							url: 'email-sender.php',
+							data: dataToSend,
+							dataType: 'json',
+							success: function (msg) {
+								alert(msg);
+								if (msg=="failure") {
+									alert("kind of success");
+								}
+								
+							}
+						});
+						
+						if (typeof(Storage) !== "undefined") {
+						};
+							
+					});
+	});
+		
+ 
+ 
+      try {
+        App.restore();
+      } catch (err) {
+        App.load('home');
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
