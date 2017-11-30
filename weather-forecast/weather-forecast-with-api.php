@@ -47,10 +47,10 @@
     <meta content="text/html charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    
     <title>Weather Forecast</title>
     <style type="text/css">
     
@@ -103,38 +103,40 @@
 </head>
 
 <body>
-        <div class="container">
-        <form method="post">
-                <p class="display-4 text-center"><a href="https://mfisher.net/weather-forecast-with-api.php">What's The Weather?</a></p> 
-            
-                <p class="h2 text-center">Enter the name of a location.</p>
-            
-                <div class="row">
-                    <div class="col">
-                      
-                    </div>
-                    <div class="form-group col-8">
-                        <input type="text" class="form-control" name="weatherinput" id="weatherinput" placeholder="E.g. London, France">
-                    </div>
-                    <div class="col">
-                      
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-5">
+    <div class="container">
+    <form method="post">
+            <p class="display-4 text-center"><a href="https://mfisher.net/weather-forecast-with-api.php">What's The Weather?</a></p> 
 
-                    </div>
-                    <div class="col">
-                      <button type="submit" class="btn btn-primary" id="weatherbtn">Submit</button>
-                    </div>
-                    <div class="col-5">
-                     
-                    </div>
+            <p class="h2 text-center">Enter the name of a location.</p>
+
+            <div class="row">
+                <div class="col">
+
                 </div>
-                <br>
-                <? echo $toBePutIn ?>
-        </form>
-        </div>
+                <div class="form-group col-8">
+                    <input type="text" class="form-control" name="weatherinput" id="weatherinput" placeholder="E.g. London, France">
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-5">
+
+                </div>
+                <div class="col">
+                  <button type="submit" class="btn btn-primary" id="weatherbtn">Submit</button>
+                </div>
+                <div class="col-5">
+
+                </div>
+            </div>
+            <br>
+            <? echo $toBePutIn ?>
+    </form>
+    </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 </html>

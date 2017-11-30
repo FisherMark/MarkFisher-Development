@@ -18,8 +18,6 @@ if(isset($_POST['logoutButton'])) {
 	header("Location: login.php");
 }
 
-
-
 //Get the same variables to refer to later despite coming from cookies/session, or redirect if not logged in
 if(isset($_COOKIE['email'])) {
     $_SESSION['email'] = $_COOKIE['email'];
@@ -44,8 +42,6 @@ if ($result = mysqli_query($link, $query)) {
 } else {
         echo "error";
 }
-
-
 
 //Tweeting function
 if(isset($_POST['tweetingButton'])) {

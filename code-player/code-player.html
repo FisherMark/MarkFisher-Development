@@ -3,100 +3,96 @@
 	<head>
 	
 		<title>Code Player</title>
-		
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		
-		
-			<style type="text/css">
-				body {
-					font-family: Helvetica, sans-serif;
-					padding:0;
-					margin:0;
-				}
-				
-				#topbar {
-					height:50px;
-					width:100%;
-					background-color: #EEEEEE;
-				}
-				
-				#codePlayer {
-					position:relative;
-					top:-53px;
-					width:150px;
-				}
-				
-				#buttonsBox {
-					
-					height:40px;
-					width:260px;
-					margin: 0 auto;
-					position:relative;
-					border: 1px solid grey;
-					border-radius:5px;
-					background-color:#EAF3FF;
-                    cursor:pointer;
-				}
-				.buttons {
-					float:left;
-					height:40px;
-					position:relative;
-					width:50px;
-					border-right:1px solid grey;
-				}
-				
-				#java {
-					width:85px;
-				}
-				
-				textarea {
-                    resize: none;
-                    border-top: none;
-                    border-color: grey;
-				}
-				
-				.panel {
-                    float:left;
-                    width: 50%;
-				}
-				
-				.hidden {
-                    display:none;
-                    border-left:none;
-				}
-				
-				iframe {
-				    border:none;
-				}
-				
-				.active {
-                    background-color: #E8F2FF;
-				}
-				
-				.textSpan {
-					pointer-events:none;
-				}
-				
-				#htmlPanel {
-					background-color:#b3e6ff;
-				}
-				
-				#cssPanel {
-					background-color:#ccffe6;
-				}
-				
-				#javaPanel {
-					background-color:#ffbb99;
-				}
-                
-                #outputPanel {
-                    background-color:#c4c4c4;
-                }
-                
-                .active {
-                    background-color:9bc9f7;
-                }
-			</style>
+        <style type="text/css">
+            body {
+                font-family: Helvetica, sans-serif;
+                padding:0;
+                margin:0;
+            }
+
+            #topbar {
+                height:50px;
+                width:100%;
+                background-color: #EEEEEE;
+            }
+
+            #codePlayer {
+                position:relative;
+                top:-53px;
+                width:850px;
+            }
+
+            #buttonsBox {
+
+                height:40px;
+                width:260px;
+                margin: 0 auto;
+                position:relative;
+                border: 1px solid grey;
+                border-radius:5px;
+                background-color:#EAF3FF;
+                cursor:pointer;
+            }
+            .buttons {
+                float:left;
+                height:40px;
+                position:relative;
+                width:50px;
+                border-right:1px solid grey;
+            }
+
+            #java {
+                width:85px;
+            }
+
+            textarea {
+                resize: none;
+                border-top: none;
+                border-color: grey;
+            }
+
+            .panel {
+                float:left;
+                width: 50%;
+            }
+
+            .hidden {
+                display:none;
+                border-left:none;
+            }
+
+            iframe {
+                border:none;
+            }
+
+            .active {
+                background-color: #E8F2FF;
+            }
+
+            .textSpan {
+                pointer-events:none;
+            }
+
+            #htmlPanel {
+                background-color:#b3e6ff;
+            }
+
+            #cssPanel {
+                background-color:#ccffe6;
+            }
+
+            #javaPanel {
+                background-color:#ffbb99;
+            }
+
+            #outputPanel {
+                background-color:#c4c4c4;
+            }
+
+            .active {
+                background-color:9bc9f7;
+            }
+        </style>
 			
 			
 	</head>
@@ -105,50 +101,38 @@
 	<body>
 	
 		<div id="topbar">
-				
-				<div id="buttonsBox">
-					<div class="buttons active" id="html" style="left:0px;width:60px">
-					
-						<span class="textSpan" style="position:relative;top:9px;left:10px">HTML</span>
-					
-					</div>
-					
-					<div class="buttons active" id="css">
-					
-						<span style="position:relative;top:9px;left:7px">CSS</span>
-						
-					</div>
-					
-					<div class="buttons active" id="java">
-						
-						<span style="position:relative;top:9px;left:7px">Javascript</span>
-					
-					</div>
-				
-					<div class="buttons active" id="output" style="border-right:none;width:62px">
-					
-						<span style="position:relative;top:9px;left:7px">Output</span>
-						
-					</div>
-				
-				</div>
-				<div id="fcl"></div>
-				<h2 id="codePlayer">Code player</h2>
+            <div id="buttonsBox">
+                <div class="buttons active" id="html" style="left:0px;width:60px">
+                    <span class="textSpan" style="position:relative;top:9px;left:10px">HTML</span>
+                </div>
+                
+                <div class="buttons active" id="css">
+                    <span style="position:relative;top:9px;left:7px">CSS</span>
+                </div>
+
+                <div class="buttons active" id="java">
+                    <span style="position:relative;top:9px;left:7px">Javascript</span>
+                </div>
+
+                <div class="buttons active" id="output" style="border-right:none;width:62px">
+                    
+                    <span style="position:relative;top:9px;left:7px">Output</span>
+                    
+                </div>
+
+            </div>
+            <div id="fcl"></div>
+            <h2 id="codePlayer">Code player - enter HTML, CSS and Javascript to see it previewed.</h2>
 				
 		</div>
-			
 			<div>
 				<textarea id="htmlPanel" class="panel"></textarea>
-				
 				<textarea id="cssPanel" class="panel"></textarea>
-				
 				<textarea id="javaPanel" class="panel"></textarea>
-				
 				<iframe id="outputPanel" class="panel"></iframe>
 			</div>
-		
-		
-		
+        
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script type="text/javascript">
 		
 			$(".buttons").click(function() {
@@ -183,9 +167,5 @@
 			});
 		
 		</script>
-		
-	
 	</body>
-
-	
 </html>

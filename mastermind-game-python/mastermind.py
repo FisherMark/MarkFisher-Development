@@ -3,9 +3,7 @@
 print ('Content-type: text/html')
 print ('')
 
-
 print '<h1>Mastermind</h1>'
-
 
 import random
 import cgi
@@ -20,12 +18,9 @@ accountedForGuess = [0,0,0,0]
 reds = [0,0,0,0]
 whites = [0,0,0,0]
 
-	
 #we will use numbers rather than colours
 #python will generate a random number
 #compare entries to it
-
-
 
 def rNGa(a):
 	numbers = ""
@@ -119,12 +114,6 @@ if "guess0" in form:
 					wPegs += 1
 	wPegs = whites[0]+whites[1]+whites[2]+whites[3]				
 
-
-
-
-
-
-	
 print '<form method="post">'
 print '<p>Guess the number:</p>'
 print '<input type=hidden name="formLives" value="' + str(lives) + '">'
@@ -174,7 +163,3 @@ print '</select>'
 print '</p>'
 print '<input type="submit" value="GOGO">'
 print '</form>'
-
-
-
-	
