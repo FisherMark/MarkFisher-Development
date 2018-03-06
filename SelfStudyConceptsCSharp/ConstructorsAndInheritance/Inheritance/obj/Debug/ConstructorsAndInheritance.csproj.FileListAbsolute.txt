@@ -1,0 +1,13 @@
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\bin\Debug\Inheritance.exe.config
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\bin\Debug\Inheritance.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\bin\Debug\Inheritance.pdb
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\obj\Debug\ConstructorsAndInheritance.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\obj\Debug\Inheritance.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\obj\Debug\Inheritance.pdb
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\ConstructorsAndInheritance\Inheritance\bin\Debug\Inheritance.exe.config
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\ConstructorsAndInheritance\Inheritance\bin\Debug\Inheritance.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\ConstructorsAndInheritance\Inheritance\bin\Debug\Inheritance.pdb
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\ConstructorsAndInheritance\Inheritance\obj\Debug\ConstructorsAndInheritance.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\ConstructorsAndInheritance\Inheritance\obj\Debug\ConstructorsAndInheritance.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\ConstructorsAndInheritance\Inheritance\obj\Debug\Inheritance.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\ConstructorsAndInheritance\Inheritance\obj\Debug\Inheritance.pdb

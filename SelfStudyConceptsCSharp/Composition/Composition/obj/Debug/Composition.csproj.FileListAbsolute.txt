@@ -1,0 +1,7 @@
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Composition\Composition\obj\Debug\Composition.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Composition\Composition\obj\Debug\Composition.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Composition\Composition\bin\Debug\Composition.exe.config
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Composition\Composition\bin\Debug\Composition.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Composition\Composition\bin\Debug\Composition.pdb
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Composition\Composition\obj\Debug\Composition.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Composition\Composition\obj\Debug\Composition.pdb

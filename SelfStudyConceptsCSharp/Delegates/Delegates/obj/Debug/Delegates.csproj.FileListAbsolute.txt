@@ -1,0 +1,7 @@
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Delegates\Delegates\bin\Debug\Delegates.exe.config
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Delegates\Delegates\bin\Debug\Delegates.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Delegates\Delegates\bin\Debug\Delegates.pdb
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Delegates\Delegates\obj\Debug\Delegates.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Delegates\Delegates\obj\Debug\Delegates.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Delegates\Delegates\obj\Debug\Delegates.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Delegates\Delegates\obj\Debug\Delegates.pdb

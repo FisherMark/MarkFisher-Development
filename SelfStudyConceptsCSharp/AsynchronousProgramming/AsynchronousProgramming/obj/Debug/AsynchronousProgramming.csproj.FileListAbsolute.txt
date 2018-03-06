@@ -1,0 +1,15 @@
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\bin\Debug\AsynchronousProgramming.exe.config
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\bin\Debug\AsynchronousProgramming.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\bin\Debug\AsynchronousProgramming.pdb
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\obj\Debug\AsynchronousProgramming.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\obj\Debug\MainWindow.g.cs
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\obj\Debug\App.g.cs
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\obj\Debug\AsynchronousProgramming_MarkupCompile.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\obj\Debug\AsynchronousProgramming_MarkupCompile.lref
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\obj\Debug\MainWindow.baml
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\obj\Debug\AsynchronousProgramming.g.resources
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\obj\Debug\AsynchronousProgramming.Properties.Resources.resources
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\obj\Debug\AsynchronousProgramming.csproj.GenerateResource.Cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\obj\Debug\AsynchronousProgramming.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\obj\Debug\AsynchronousProgramming.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\AsynchronousProgramming\AsynchronousProgramming\obj\Debug\AsynchronousProgramming.pdb

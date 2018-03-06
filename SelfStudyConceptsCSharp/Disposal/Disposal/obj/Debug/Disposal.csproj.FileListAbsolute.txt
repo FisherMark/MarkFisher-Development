@@ -1,0 +1,7 @@
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Disposal\Disposal\bin\Debug\Disposal.exe.config
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Disposal\Disposal\bin\Debug\Disposal.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Disposal\Disposal\bin\Debug\Disposal.pdb
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Disposal\Disposal\obj\Debug\Disposal.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Disposal\Disposal\obj\Debug\Disposal.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Disposal\Disposal\obj\Debug\Disposal.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Disposal\Disposal\obj\Debug\Disposal.pdb

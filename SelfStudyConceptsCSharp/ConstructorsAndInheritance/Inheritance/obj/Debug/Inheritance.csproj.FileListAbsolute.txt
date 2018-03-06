@@ -1,0 +1,7 @@
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\bin\Debug\Inheritance.exe.config
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\bin\Debug\Inheritance.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\bin\Debug\Inheritance.pdb
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\obj\Debug\Inheritance.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\obj\Debug\Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\obj\Debug\Inheritance.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\Inheritance\Inheritance\obj\Debug\Inheritance.pdb

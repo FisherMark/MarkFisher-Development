@@ -1,0 +1,7 @@
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\NullableTypes\NullableTypes\bin\Debug\NullableTypes.exe.config
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\NullableTypes\NullableTypes\bin\Debug\NullableTypes.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\NullableTypes\NullableTypes\bin\Debug\NullableTypes.pdb
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\NullableTypes\NullableTypes\obj\Debug\NullableTypes.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\NullableTypes\NullableTypes\obj\Debug\NullableTypes.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\NullableTypes\NullableTypes\obj\Debug\NullableTypes.exe
+C:\Users\Mark\Desktop\Web dev\c#\SelfStudyConcepts\NullableTypes\NullableTypes\obj\Debug\NullableTypes.pdb
